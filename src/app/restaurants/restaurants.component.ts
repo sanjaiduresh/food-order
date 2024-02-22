@@ -1,9 +1,12 @@
+import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-
+import { IonHeader, IonToolbar,IonSearchbar,IonSelect,IonSelectOption,IonItem, IonTitle,IonBackButton,IonCol, IonGrid,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader, IonCard, IonIcon, IonList, IonApp } from '@ionic/angular/standalone';
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
   styleUrls: ['./restaurants.component.scss'],
+  standalone:true,
+  imports: [NgFor, IonApp, IonList, IonHeader, IonToolbar,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonGrid,IonCol,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
 })
 export class RestaurantsComponent  implements OnInit {
   restaurants: any[] = [
