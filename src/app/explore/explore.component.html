@@ -1,0 +1,12 @@
+  <ion-toolbar>
+    <div class="explore">Explore</div>
+    <ion-grid style="height: 100px; overflow-y: scroll">
+      <ion-row>
+        <ion-col *ngFor="let item of exploreItems">
+          <img [src]="item.imageUrl" class="explore-img" />
+          <br />
+          <span class="explore-span">{{ item.name }}</span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>

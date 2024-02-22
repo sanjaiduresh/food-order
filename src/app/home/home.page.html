@@ -1,20 +1,182 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-app>
+  <ion-content class="Home">
+    <ion-header>
+      <ion-toolbar>
+        <div class="header-gradient">
+          <ion-grid>
+            <ion-row>
+              <ion-col size="1" class="back-img">
+                <img src="/assets/Images/Back-Icon.png" />
+              </ion-col>
+              <ion-col size="10" class="custom-header-title_1"
+                >Food & Drinks</ion-col
+              >
+              <ion-col size="1" class="back-img">
+                <img src="../../assets/Images/Close-Button.png" />
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-row class="custom-header-title_2">Time To Order</ion-row>
+          <ion-row class="custom-header-title-3"
+            >100+ Restaurants deliver to your location</ion-row
+          >
+          <ion-searchbar
+            style="color: #8a8a8a"
+            color="secondary"
+            placeholder="Search Food,  Restaurant near you"
+          ></ion-searchbar>
+        </div>
+      </ion-toolbar>
+    </ion-header>
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <img src="../../assets/Images/row-banner 1.jpg" class="banner" />
     </ion-toolbar>
-  </ion-header>
+    <app-explore></app-explore>
+    <ion-grid>
+      <ion-row class="ion-justify-content-between">
+        <ion-col
+          size="9"
+          style="
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+          "
+        >
+          Top Restaurants near you
+        </ion-col>
+        <ion-col
+          size="3"
+          style="
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0em;
+            text-align: left;
+          "
+        >
+          View all
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card>
+            <img src="../../assets/Images/Rooti.jpg" />
+            <ion-card-header style="background-color: #f5f5f5">
+              <ion-col> Egattur </ion-col>
+              <ion-card-subtitle class="card-subtitle">
+                SOUTH INDIAN . CHETTINADU
+              </ion-card-subtitle>
+              <ion-card-subtitle>
+                A2B - Adyar Anandha Bhavan
+              </ion-card-subtitle>
+            </ion-card-header>
+            <ion-grid>
+              <ion-row class="ion-justify-content-between">
+                <ion-col size="5"> 2.5km </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card>
+            <img src="../../assets/Images/Eatfit.jpg" />
+            <ion-card-header style="background-color: #f5f5f5">
+              <ion-col size="5"> Siruseri </ion-col>
+
+              <ion-card-subtitle class="card-subtitle">
+                SOUTH INDIAN . CHETTINADU
+              </ion-card-subtitle>
+              <ion-card-subtitle> Eatfit </ion-card-subtitle>
+            </ion-card-header>
+            <ion-grid>
+              <ion-row class="ion-justify-content-between">
+                <ion-col size="5"> 2.5km </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div
+      style="
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+      "
+    >
+      All Restaurants
+    </div>
+    <div style="position: relative">
+      <ion-grid style="padding-bottom: 20px">
+        <ion-row>
+          <ion-col
+            offset="0.5"
+            class="all-restaurants-options"
+            style="position: relative"
+          >
+            <span class="options-text">Sort By</span>
+            <img
+              src="assets/Images/Group.png"
+              style="position: absolute; top: 0; left: 48px"
+            />
+          </ion-col>
+          <ion-col offset="0.5" class="all-restaurants-options"
+            ><span class="options-text">Today</span></ion-col
+          >
+          <ion-col offset="0.5" class="all-restaurants-options"
+            >Pre-Booking</ion-col
+          >
+          <ion-col offset="0.5" class="all-restaurants-options"
+            ><span class="options-text">Veg only</span></ion-col
+          >
+        </ion-row>
+      </ion-grid>
+      <div style="position: absolute; top: 30px; width: 100%">
+        <ion-toolbar color="medium">
+          <ion-grid>
+            <ion-row class="ion-align-items-center">
+              <ion-col>
+                <img
+                  src="../../assets/Images/Home-icon.png"
+                  class="options-icons"
+                /><span
+                  class="options-icons-span"
+                  style="color: #e84155; padding: 0"
+                  >Shocals food</span
+                ></ion-col
+              >
+              <ion-col>
+                <img
+                  src="../../assets/Images/Vector.png"
+                  class="options-icons"
+                /><span class="options-icons-span">Daily deals</span></ion-col
+              >
+              <ion-col>
+                <img
+                  src="../../assets/Images/Layer_1.png"
+                  class="options-icons"
+                />
+                <span class="options-icons-span">Restaurants</span>
+              </ion-col>
+              <ion-col>
+                <img
+                  src="../../assets/Images/Vector (1).png"
+                  class="options-icons"
+                /><span class="options-icons-span">My orders</span></ion-col
+              >
+            </ion-row>
+          </ion-grid>
+        </ion-toolbar>
+      </div>
+    </div>
+    <app-restaurants></app-restaurants>
+  </ion-content>
+</ion-app>

@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
-
+import { RestaurantsComponent} from '../restaurants/restaurants.component';
 import { HomePageRoutingModule } from './home-routing.module';
-
+import { ExploreComponent } from '../explore/explore.component';
 
 @NgModule({
   imports: [
@@ -14,6 +14,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,RestaurantsComponent,ExploreComponent]
 })
 export class HomePageModule {}
