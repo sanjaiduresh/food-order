@@ -7,7 +7,7 @@ import { ExploreComponent } from '../explore/explore.component';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone:true,
- imports: [RestaurantsComponent,ExploreComponent,IonApp, IonList, IonHeader, IonToolbar,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonGrid,IonCol,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
+  imports: [RestaurantsComponent,ExploreComponent,IonApp, IonList, IonHeader, IonToolbar,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonGrid,IonCol,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
 })
 export class HomePage {
 

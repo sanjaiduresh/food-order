@@ -2,13 +2,20 @@
   <ion-row *ngFor="let restaurant of restaurants">
     <ion-col>
       <ion-card>
-        <div style="position: relative">
+        <ion-header class="restaurant-image">
           <img src="{{ restaurant.imageUrl }}" alt="{{ restaurant.name }}" />
-          <span style="z-index: 10">
+          <span class="orderBefore">
             {{ restaurant.orderBefore }}
           </span>
-        </div>
-        <ion-card-header>
+          <span class="restaurant-offer">
+            {{ restaurant.offer }}
+            <span class="restaurant-offer-span" *ngIf="restaurant.offer">OFF</span>
+          </span>
+          <span class="restaurant-favourites">
+            <img src="{{ restaurant.favourites }}"
+          /></span>
+        </ion-header>
+        <ion-card-header style="padding: 0px">
           <ion-card-subtitle class="card-subtitle">
             {{ restaurant.cuisine }}
           </ion-card-subtitle>
@@ -17,10 +24,10 @@
               <img src="{{ restaurant.vegIconUrl }}" alt="Veg" />
               {{ restaurant.name }}
             </ion-col>
-            <ion-col class="restaurants-rating" offset="3">
+            <span class="card-rating">
               <img src="assets/Images/star.png" alt="Star" />
               {{ restaurant.rating }}
-            </ion-col>
+            </span>
           </ion-card-title>
         </ion-card-header>
         <ion-card-content class="card-content">
