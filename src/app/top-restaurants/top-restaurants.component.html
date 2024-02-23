@@ -1,0 +1,47 @@
+<ion-grid>
+  <ion-row>
+    <ion-col *ngFor="let restaurant of restaurants" style="padding: 5px">
+      <ion-card-header class="restaurant">
+        
+
+        <ion-card-subtitle class="restaurant-name">
+          {{ restaurant.name }}
+        </ion-card-subtitle>
+        <ion-card-subtitle class="restaurant-special">
+          {{ restaurant.cuisine }}
+        </ion-card-subtitle>
+        <ion-card-subtitle class="restaurant-location">{{
+          restaurant.location
+        }}</ion-card-subtitle>
+        <ion-card-title class="restaurant-img">
+          <img src="{{ restaurant.imageUrl }}" alt="{{ restaurant.name }}" />
+          <span class="order-before">
+            <span class="order-before-span" style="    font-weight: 100;
+            ">Next Delivery Slot: </span><br />
+            {{ restaurant.orderBefore }}<sup><img src="assets/Images/iWhite.png"></sup></span
+          >
+          <span class="restaurant-offer">
+            {{ restaurant.offer }}
+            @if (restaurant.offer) {
+            <span class="restaurant-offer-span">OFF</span>
+            }
+          </span>
+          <span class="restaurant-favourites">
+            <img src="{{ restaurant.favourites }}"
+          /></span>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-grid class="restaurant-distance">
+        <ion-row class="ion-justify-content-between">
+          <ion-col>{{ restaurant.distance }}km</ion-col>
+          <ion-col>
+            <span class="card-rating">
+              <img src="assets/Images/star.png" alt="Star" />
+              {{ restaurant.rating }}
+            </span>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-col>
+  </ion-row>
+</ion-grid>
