@@ -1,5 +1,7 @@
 <ion-grid>
-  <ion-row *ngFor="let restaurant of restaurants">
+  <!-- Restaurants Cards are printed by itration -->
+  @for (restaurant of restaurants; track restaurant.name) {
+  <ion-row>
     <ion-col>
       <ion-card>
         <ion-header class="restaurant-image">
@@ -8,16 +10,16 @@
             {{ restaurant.orderBefore }}
           </span>
           <span class="restaurant-offer">
-            {{ restaurant.offer }}@if (restaurant.offer) {<span
-              class="restaurant-offer-span"
-              >OFF</span
-            >}
+            {{ restaurant.offer }}
+            <!-- "OFF" gets printed if there is any offer -->
+            @if (restaurant.offer) {
+            <span class="restaurant-offer-span">OFF</span>}
           </span>
           <span class="restaurant-favourites">
             <img src="{{ restaurant.favourites }}"
           /></span>
         </ion-header>
-        <ion-card-header style="padding: 0px">
+        <ion-card-header class="restaurant-content">
           <ion-card-subtitle class="card-subtitle">
             {{ restaurant.cuisine }}
           </ion-card-subtitle>
@@ -33,7 +35,8 @@
           </ion-card-title>
         </ion-card-header>
         <ion-card-content class="card-content">
-          Next Delivery Slot: Today 12.00 pm - 14.00 pm <sup><img src="assets/Images/i.png"></sup>
+          Next Delivery Slot: Today 12.00 pm - 14.00 pm
+          <sup><img src="assets/Images/i.png" /></sup>
         </ion-card-content>
         <ion-grid>
           <ion-row class="ion-justify-content-between">
@@ -44,4 +47,5 @@
       </ion-card>
     </ion-col>
   </ion-row>
+  }
 </ion-grid>

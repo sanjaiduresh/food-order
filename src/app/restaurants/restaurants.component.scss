@@ -1,5 +1,5 @@
 .restaurant-image{
-  position: relative; padding: 0px
+  position: relative; padding: 0px;
 }
 .orderBefore {
   position: absolute;
@@ -31,14 +31,16 @@
   font-weight: 700;
   padding: 0px;
 }
+.restaurant-content{
+  padding: 0px;
+}
 .card-title {
   font-size: medium;
-  margin: 1%;
   position: relative;
 }
 .card-subtitle {
   font-size: 10px;
-  padding-left: 4%;
+  padding-left:10px;
 }
 .card-content {
   font-size: 0.9em;

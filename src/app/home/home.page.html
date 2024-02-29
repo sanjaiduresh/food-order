@@ -1,131 +1,78 @@
 <ion-app>
-  <ion-content class="Home">
-    <ion-header>
-      <ion-toolbar>
-        <div class="header-gradient">
-          <ion-grid>
-            <ion-row>
-              <ion-col size="1" class="back-img">
-                <img src="assets/Images/Back-Icon.png" />
-              </ion-col>
-              <ion-col size="10" class="custom-header-title_1"
-                >Food & Drinks</ion-col
-              >
-              <ion-col size="1" class="back-img">
-                <img src="assets/Images/Close-Button.png" />
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-          <ion-row class="custom-header-title_2">Time To Order</ion-row>
-          <ion-row class="custom-header-title-3"
-            >100+ Restaurants deliver to your location</ion-row
-          >
-          <ion-searchbar
-            color="secondary"
-            placeholder="Search Food,  Restaurant near you"
-            class="search-bar"
-          ></ion-searchbar>
-        </div>
-      </ion-toolbar>
-    </ion-header>
+  <ion-header>
     <ion-toolbar>
-      <img src="assets/Images/row-banner 1.jpg" class="banner" />
+      <div class="header-gradient">
+        <ion-grid>
+          <ion-row>
+            <ion-col size="1" class="back-img">
+              <img src="/assets/Images/Back-Icon.png" />
+            </ion-col>
+            <ion-col size="10" class="custom-header-title_1">Food & Drinks</ion-col>
+            <ion-col size="1" class="back-img">
+              <img src="/assets/Images/Close-Button.png" />
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-row class="custom-header-title_2">Time To Order</ion-row>
+        <ion-row class="custom-header-title-3">100+ Restaurants deliver to your location
+        </ion-row>
+        <ion-searchbar color="secondary" placeholder="Search Food,  Restaurant near you"
+          class="search-bar"></ion-searchbar>
+      </div>
     </ion-toolbar>
-    <app-explore></app-explore>  <!--Explore component redered -->
+  </ion-header>
+  <ion-content class="Home">
+
+    <ion-toolbar>
+      <img src="/assets/Images/row-banner 1.jpg" class="banner" />
+    </ion-toolbar>
+    <!--Explore component redered -->
+    <app-explore></app-explore>
     <ion-grid>
       <ion-row class="ion-justify-content-between">
-        <ion-col
-          size="9"
-          style="
-            font-size: 16px;
-            font-weight: 600;
-          "
-        >
+        <ion-col size="9" class="top-restaurants">
           Top Restaurants near you
         </ion-col>
-        <ion-col
-          size="3"
-          style="
-            font-size: 12px;
-            font-weight: 500;
-          "
-        >
+        <ion-col size="3">
           View all
         </ion-col>
       </ion-row>
     </ion-grid>
+    <!--Top Restaurants rendered-->
+    <app-top-restaurants></app-top-restaurants>
+    <div class="all-restaurants">All Restaurants</div>
+    <ion-grid>
+      <ion-row>
+        <ion-col offset="0.3" class="all-restaurants-options">
+          <span class="options-text">Sort By</span>
+          <img src="/assets/Images/Group.png" class="options-text-img" />
+        </ion-col>
+        <ion-col offset="0.3" class="all-restaurants-options"><span class="options-text">Today</span></ion-col>
+        <ion-col offset="0.3" class="all-restaurants-options">Pre-Booking</ion-col>
+        <ion-col offset="0.3" class="all-restaurants-options"><span class="options-text">Veg only</span></ion-col>
+      </ion-row>
+    </ion-grid>
 
-<app-top-restaurants></app-top-restaurants> <!--Top Restaurants rendered-->
-    
-
-    <div class="all-restaurants"
-      
-    >
-      All Restaurants
-    </div>
-    <div style="position: relative">
-      <ion-grid style="padding-bottom: 20px">
-        <ion-row>
-          <ion-col
-            offset="0.5"
-            class="all-restaurants-options"
-            style="position: relative"
-          >
-            <span class="options-text">Sort By</span>
-            <img
-              src="assets/Images/Group.png"
-              style="position: absolute; top: 0; left: 48px"
-            />
-          </ion-col>
-          <ion-col offset="0.5" class="all-restaurants-options"
-            ><span class="options-text">Today</span></ion-col
-          >
-          <ion-col offset="0.5" class="all-restaurants-options"
-            >Pre-Booking</ion-col
-          >
-          <ion-col offset="0.5" class="all-restaurants-options"
-            ><span class="options-text">Veg only</span></ion-col
-          >
-        </ion-row>
-      </ion-grid>
-      <div style="position: absolute; top: 30px; width: 100%">
-        <ion-toolbar color="medium">
-          <ion-grid>
-            <ion-row class="ion-align-items-center">
-              <ion-col>
-                <img
-                  src="assets/Images/Home-icon.png"
-                  class="options-icons"
-                /><span
-                  class="options-icons-span"
-                  style="color: #e84155; padding: 0"
-                  >Shocals food</span
-                ></ion-col
-              >
-              <ion-col>
-                <img
-                  src="assets/Images/Vector.png"
-                  class="options-icons"
-                /><span class="options-icons-span">Daily deals</span></ion-col
-              >
-              <ion-col>
-                <img
-                  src="assets/Images/Layer_1.png"
-                  class="options-icons"
-                />
-                <span class="options-icons-span">Restaurants</span>
-              </ion-col>
-              <ion-col>
-                <img
-                  src="assets/Images/Vector (1).png"
-                  class="options-icons"
-                /><span class="options-icons-span">My orders</span></ion-col
-              >
-            </ion-row>
-          </ion-grid>
-        </ion-toolbar>
-      </div>
-    </div>
+    <!--Restaurants card component gets rendered here-->
     <app-restaurants></app-restaurants>
   </ion-content>
+  <ion-footer>
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col class="ion-text-center">
+          <img src="/assets/Images/Home-icon.png" class="options-icons" /><span class="options-icons-span"
+            style="color: #e84155; padding: 0">Shocals food</span></ion-col>
+        <ion-col>
+          <img src="/assets/Images/Vector.png" class="options-icons" /><span class="options-icons-span">Daily
+            deals</span></ion-col>
+        <ion-col>
+          <img src="/assets/Images/Restaurants.png" class="options-icons" />
+          <span class="options-icons-span">Restaurants</span>
+        </ion-col>
+        <ion-col>
+          <img src="/assets/Images/MyOrders.png" class="options-icons" /><span class="options-icons-span">My
+            orders</span></ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-footer>
 </ion-app>

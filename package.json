@@ -4,7 +4,7 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
-    "create": "ng g c top-restaurants",
+    "create": "ng g c footer",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",

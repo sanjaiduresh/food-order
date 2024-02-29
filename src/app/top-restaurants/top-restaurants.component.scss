@@ -1,6 +1,6 @@
 .restaurant {
   background-color: #f5f5f5;
-  padding: 2px;
+  padding: 0px;
 }
 .restaurant-special {
   font-size: 10px;
@@ -40,7 +40,7 @@
 }
 .restaurant-favourites {
   position: absolute;
-  top: 0;
+  top: -10px;
   right: 4px;
 }
 .restaurant-offer {

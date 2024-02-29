@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import {IonHeader, IonToolbar,IonSearchbar,IonSelect,IonSelectOption,IonItem, IonTitle,IonBackButton,IonCol, IonGrid,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader, IonCard, IonIcon, IonList, IonApp } from '@ionic/angular/standalone';
 
@@ -7,7 +6,7 @@ import {IonHeader, IonToolbar,IonSearchbar,IonSelect,IonSelectOption,IonItem, Io
   templateUrl: './explore.component.html',
   styleUrls: ['./explore.component.scss'],
   standalone:true,
-  imports: [NgFor, IonApp, IonList, IonHeader, IonToolbar,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonGrid,IonCol,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
+  imports: [IonApp, IonList, IonHeader, IonToolbar,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonGrid,IonCol,IonRow,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
 
 })
 export class ExploreComponent implements OnInit {
@@ -24,7 +23,7 @@ export class ExploreComponent implements OnInit {
     },
     {
       imageUrl:
-        'assets/Images/BriyaniExplore.png',
+        '/assets/Images/BriyaniExplore.png',
       name: 'Briyani',
     },
     {
