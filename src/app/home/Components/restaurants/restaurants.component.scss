@@ -1,0 +1,57 @@
+.restaurant-image{
+    position: relative; padding: 0px;
+  }
+  .orderBefore {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #FFFF;
+    background-color: #e84155;
+    border-radius: 4px;
+    padding: 1%;
+  }
+  .restaurant-favourites{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .restaurant-offer{
+    position: absolute;
+    color: #FFFF;
+    background-color: #5ABE0B  ;
+    top: 0px;
+    left: 0px;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .restaurant-offer-span{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0px;
+  }
+  .restaurant-content{
+    padding: 0px;
+  }
+  .card-title {
+    font-size: medium;
+    position: relative;
+  }
+  .card-subtitle {
+    font-size: 10px;
+    padding-left:10px;
+  }
+  .card-content {
+    font-size: 0.9em;
+    padding: 0 0 0 5px;
+    color: #00a651;
+  }
+  .card-rating {
+    position: absolute;
+    right: 5%;
+    font-weight: 500;
+    font-size: 12px;
+    border: #dfdfdf 1px solid;
+  }
+  

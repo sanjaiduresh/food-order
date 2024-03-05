@@ -1,0 +1,28 @@
+.explore{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+    }
+    .explore-img{
+      width: 66px;
+    height: 66px;
+    border-radius: 33px;
+    }
+    .explore-span{
+      padding-left: 8px;
+    }
+    ion-scroll[scrollX] {
+      white-space: nowrap;
+      height:50px;
+      overflow: hidden;
+  
+      .scroll-item {
+        display: inline-block;
+      }
+    }
+  
+    /* Hide ion-content scrollbar */
+    ::-webkit-scrollbar{
+      display:none;
+    }

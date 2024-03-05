@@ -1,0 +1,21 @@
+<ion-toolbar>
+  <div class="explore">Explore</div>
+  <ion-grid>
+    <ion-row >
+        <!-- <ion-scroll scrollX="true"> -->
+          @for (item of exploreItems; track item.name) {
+      <ion-col >
+        <img [src]="item.imageUrl" class="explore-img" />
+        <br />
+        <span class="explore-span">{{ item.name }}</span>
+      </ion-col>
+    }
+  <!-- </ion-scroll> -->
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
+
+
+
+
+

@@ -3,6 +3,8 @@
       <!-- Restaurants Cards are printed by itration -->  
     @for (restaurant of restaurants; track restaurant.name) {
       <ion-col  >
+        <!-- <ion-card> -->
+          
         <ion-card-header class="restaurant">
             <ion-card-subtitle class="restaurant-name">
             {{ restaurant.name }}
@@ -42,8 +44,11 @@
               </span>
             </ion-col>
           </ion-row>
-        </ion-grid>
+        </ion-grid>   
+       <!-- </ion-card> -->
+
       </ion-col>
+
     }
    
   </ion-row>
