@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {IonHeader,IonGrid,IonRow,IonToolbar,IonCol,IonInfiniteScroll, IonSearchbar,IonSelect,IonSelectOption,IonItem, IonTitle,IonBackButton,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader, IonCard, IonIcon, IonList, IonApp,IonText } from '@ionic/angular/standalone';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @Component({
   selector: 'app-explore',
   templateUrl: './explore.component.html',
   styleUrls: ['./explore.component.scss'],
   standalone:true,
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
   imports: [IonText,IonToolbar,IonRow,IonGrid,IonCol,IonInfiniteScroll,IonApp, IonList, IonHeader,IonSearchbar,IonSelect,IonItem,IonSelectOption, IonTitle, IonBackButton,IonContent,IonCardContent,IonCardSubtitle,IonCardTitle,IonCardHeader,IonCard,IonIcon],
 
 })

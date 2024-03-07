@@ -1,21 +1,12 @@
 <ion-toolbar>
   <div class="explore">Explore</div>
-  <ion-grid>
-    <ion-row >
-        <!-- <ion-scroll scrollX="true"> -->
-          @for (item of exploreItems; track item.name) {
-      <ion-col >
-        <img [src]="item.imageUrl" class="explore-img" />
-        <br />
-        <span class="explore-span">{{ item.name }}</span>
-      </ion-col>
+  <swiper-container slides-per-view="4.5" space-between="0">
+    @for (item of exploreItems; track item.name) {
+
+    <swiper-slide> 
+      <img [src]="item.imageUrl" class="explore-img" />
+      <br />
+      <span class="explore-span">{{ item.name }}</span>
+    </swiper-slide>
     }
-  <!-- </ion-scroll> -->
-    </ion-row>
-  </ion-grid>
-</ion-toolbar>
-
-
-
-
-
+  </swiper-container>
