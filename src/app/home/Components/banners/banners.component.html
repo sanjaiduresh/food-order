@@ -1,0 +1,8 @@
+<swiper-container>
+  @for (item of bannerItems; track item.alt) {
+
+  <swiper-slide>
+    <img [src]="item.imageUrl" class="banner" />
+  </swiper-slide>
+}
+</swiper-container>
