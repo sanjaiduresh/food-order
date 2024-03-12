@@ -1,10 +1,25 @@
-  <swiper-container slides-per-view="4.5" space-between="0" >
-    @for (item of exploreItems; track item.name) {
+<!-- Start of Swiper container -->
+<swiper-container slides-per-view="4.5" space-between="0">
+  <!-- Angular For directive to loop through exploreItems array -->
 
-    <swiper-slide> 
-      <img [src]="item.imageUrl" class="explore-img" />
-      <br />
-      <span class="explore-span">{{ item.name }}</span>
-    </swiper-slide>
-    }
-  </swiper-container>
+  @for (item of exploreItems; track item.name) {
+  <!-- Start of Swiper slide -->
+
+  <swiper-slide>
+    <!-- Image tag to display item's image -->
+
+    <img [src]="item.imageUrl" class="explore-img" />
+
+    <br />
+    <!-- Displaying item's name -->
+
+    <span class="explore-span">{{ item.name }}</span>
+
+  </swiper-slide>
+  <!-- End of Swiper slide -->
+
+  }
+  <!-- End of Angular For directive -->
+
+</swiper-container>
+<!-- End of Swiper container -->

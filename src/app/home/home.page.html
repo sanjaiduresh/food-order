@@ -1,22 +1,29 @@
 <ion-app>
   <ion-header>
     <ion-toolbar>
+      <!-- Custom header design with a gradient -->
       <div class="header-gradient">
         <ion-grid>
           <ion-row>
+            <!-- Ionic column component with size 1 for back button -->
             <ion-col size="1" class="back-img">
+              <!-- Back button icon -->
               <img src="/assets/Images/Back-Icon.png" />
             </ion-col>
+            <!-- Ionic column component with size 10 for header title -->
             <ion-col size="10" class="custom-header-title_1">Food & Drinks</ion-col>
+            <!-- Ionic column component with size 1 for close button -->
             <ion-col size="1" class="back-img">
+              <!-- Close button icon -->
               <img src="/assets/Images/Close-Button.png" />
             </ion-col>
           </ion-row>
         </ion-grid>
+        <!-- Custom header titles -->
         <ion-row class="custom-header-title_2">Time To Order</ion-row>
-        <ion-row class="custom-header-title-3">100+ Restaurants deliver to your location
-        </ion-row>
-        <ion-searchbar color="secondary" placeholder="Search Food,  Restaurant near you"
+        <ion-row class="custom-header-title-3">100+ Restaurants deliver to your location</ion-row>
+        <!-- Ionic searchbar component -->
+        <ion-searchbar color="secondary" placeholder="Search Food, Restaurant near you"
           class="search-bar"></ion-searchbar>
       </div>
     </ion-toolbar>
@@ -24,36 +31,43 @@
   <ion-content class="Home">
     <!-- Banners component rendered -->
     <app-banners></app-banners>
+    <!-- Explore section title -->
     <div class="explore">Explore</div>
-    <!--Explore component rendered -->
+    <!-- Explore component rendered -->
     <app-explore></app-explore>
     <ion-grid>
+      <!-- Ionic row component with justify-content-between -->
       <ion-row class="ion-justify-content-between">
-        <ion-col size="9" class="top-restaurants">
-          Top Restaurants near you
-        </ion-col>
-        <ion-col size="3">
-          View all
-        </ion-col>
+        <!-- Ionic column component with size 9 for top restaurants title -->
+        <ion-col size="9" class="top-restaurants">Top Restaurants near you</ion-col>
+        <!-- Ionic column component with size 3 for view all link -->
+        <ion-col size="3">View all</ion-col>
       </ion-row>
     </ion-grid>
-    <!-- Top Restaurants rendered -->
+    <!-- Top Restaurants component rendered -->
     <app-top-restaurants></app-top-restaurants>
+    <!-- All Restaurants section title -->
     <div class="all-restaurants">All Restaurants</div>
+    <!-- Ionic grid component -->
     <ion-grid>
+      <!-- Ionic row component -->
       <ion-row>
+        <!-- Ionic column component with offset and class for sorting options -->
         <ion-col offset="0.3" class="all-restaurants-options">
+          <!-- Sorting option text -->
           <span class="options-text">Sort By</span>
+          <!-- Sorting option icon -->
           <img src="/assets/Images/Group.png" class="options-text-img" />
         </ion-col>
+        <!-- Ionic column component with offset and class for Today option -->
         <ion-col offset="0.3" class="all-restaurants-options"><span class="options-text">Today</span></ion-col>
+        <!-- Ionic column component with offset and class for Pre-Booking option -->
         <ion-col offset="0.3" class="all-restaurants-options">Pre-Booking</ion-col>
+        <!-- Ionic column component with offset and class for Veg only option -->
         <ion-col offset="0.3" class="all-restaurants-options"><span class="options-text">Veg only</span></ion-col>
       </ion-row>
     </ion-grid>
-
-    <!--Restaurants card component gets rendered here-->
+    <!-- Restaurants card component rendered -->
     <app-restaurants></app-restaurants>
   </ion-content>
-
 </ion-app>
