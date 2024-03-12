@@ -15,7 +15,7 @@ export class ExploreComponent  implements OnInit {
   exploreItems = [
     {
       imageUrl:
-        'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?cs=srgb&dl=beef-bread-buns-1633578.jpg&fm=jpg',
+      '/assets/Images/burger.png',
       name: 'Burger',
     },
     {
