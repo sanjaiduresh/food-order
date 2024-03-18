@@ -11,6 +11,7 @@ import { IonHeader, IonToolbar, IonSearchbar, IonSelect, IonSelectOption, IonIte
 })
 export class RestaurantsComponent  implements OnInit {
   restaurants: any[] = [
+    
     {
       imageUrl: 'assets/Images/A2B.png',
       name: 'A2B - Adyar Ananda Bhavan',
